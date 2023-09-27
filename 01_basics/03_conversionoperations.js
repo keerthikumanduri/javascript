@@ -16,10 +16,10 @@ let valueInNumber = Number(score)
 
 //true => 1; false =>0
 
-let isLoggedin = "" //here we are trying to check if the number 1 is boolean(true) or not.
+//let isLoggedin = "" //here we are trying to check if the number 1 is boolean(true) or not.
 
-let booleanIsLoggedIn = Boolean(isLoggedin)
-console.log(booleanIsLoggedIn);
+//let booleanIsLoggedIn = Boolean(isLoggedin)
+//console.log(booleanIsLoggedIn);
 
 //it is indeed boolean since the output we got is 1 which tells that it is TRUE.Therefore numbers can be converted to boolean.
 
@@ -31,8 +31,15 @@ console.log(booleanIsLoggedIn);
  
 let someNumber = 55
 
-let stringNumber = String(someNumber)
-console.log(stringNumber);
-console.log(typeof stringNumber);
+//let stringNumber = String(someNumber)
+//console.log(stringNumber);
+//console.log(typeof stringNumber);
 
 //here above we have converted a number to string.
+
+
+//operations
+
+let value = 3
+let negValue = -value
+console.log(negValue);
