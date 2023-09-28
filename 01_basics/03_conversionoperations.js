@@ -29,7 +29,7 @@ let valueInNumber = Number(score)
 // "" => False
 // "Rama" => True
  
-let someNumber = 55
+//let someNumber = 55
 
 //let stringNumber = String(someNumber)
 //console.log(stringNumber);
@@ -43,3 +43,34 @@ let someNumber = 55
 let value = 3
 let negValue = -value
 console.log(negValue);
+
+//some basic operations
+/* 
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**2);
+console.log(2/2);
+console.log(2%2);
+*/
+
+let str1 = "hello"
+let str2 = " Hanuman"
+
+let str3 = str1 + str2
+console.log(str3);
+
+console.log("1" + 2); // op - 12
+console.log(1 + "2"); // op - 12
+console.log("1" + 2 + 2); // op - 122
+console.log(1 + 2 + "2"); // op - 32
+
+console.log((3 + 4 ) * 5 % 3); // write structured code.
+
+
+let GameCounter = 100
+++GameCounter
+console.log(GameCounter);
+
+
+//assignment -  read about increment operator in mdn docs.
