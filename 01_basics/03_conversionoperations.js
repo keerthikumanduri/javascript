@@ -70,7 +70,7 @@ console.log((3 + 4 ) * 5 % 3); // write structured code.
 
 let GameCounter = 100
 ++GameCounter
-console.log(GameCounter);
+console.log(GameCounter); //here ++ is the increment operator.
 
 
 //assignment -  read about increment operator in mdn docs.
