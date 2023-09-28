@@ -70,7 +70,27 @@ console.log((3 + 4 ) * 5 % 3); // write structured code.
 
 let GameCounter = 100
 ++GameCounter
-console.log(GameCounter); //here ++ is the increment operator.
+console.log(GameCounter); //here ++ is the increment oper
 
 
 //assignment -  read about increment operator in mdn docs.
+
+/*
+
+PREFIX INCREMENT
+let x = 5;
+let y = ++x;
+// x is now 6, and y is also 6
+here , we first increase the variable by one and use it in the expression next.
+therefor the expected output is x = 6 ; y = 6.
+
+POSTFIX INCREMENT
+
+let x = 5;
+let y = x++;
+
+here we first use the value of x which is 5 and then increase x by one to use it in the expression.
+
+therefor x = 6; y = 5.
+
+*/
