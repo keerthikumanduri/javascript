@@ -33,3 +33,4 @@ console.log(url.includes("keerthivardhan"));// .includes() method tells us if th
 
 const javaScript = "I-am-learning-javaScript"
 console.log(javaScript.split('-', 1));// .split() method divides a string into substrings and returns them in a form of an array. we need to specify the kind of seperator and limit.
+
