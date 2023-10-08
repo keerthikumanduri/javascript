@@ -57,3 +57,18 @@ console.log(Object.entries(tinderuser)); // here we get an output of both keys a
 
 console.log(tinderuser.hasOwnProperty('id')); // The .hasOwnProperty() Determines whether an object has a property with the specified name. Returns boolean value.
 
+// ---------------------------------- Object destructure ---------------------
+
+const course = {
+    courseName: "Javascript",
+    coursePrice: "999",
+    courseInstructor: "Hitesh"
+}
+
+console.log(course.courseName); // this is a good way to create an object and printing a certain element inside the object, but some times you'd want to use this same variable multiple times so it looks kind of crammed , but there is another way below.
+
+//const {courseInstructor} = course
+// console.log(courseInstructor); // Here we have created an object an set it equal to our variable now it has access to all then elements inside the variable , we then pass the element we want to use into the { } and print it whenever we need it. Also if we feel like we have put a long name we can edit it to a smaller name like below.
+
+const {courseInstructor: Teacher} = course // lets assume that we feel like the coursezinstructor is a long name and we just put : and replace it with teacher and use it as usual.
+console.log(Teacher);
