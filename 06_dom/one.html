@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #ffff;
+        }
+    </style>
+</head>
+<body  class="bg-black">
+    <div>
+        <h1 id='title' class="heading">DOM learning on chai aur code. <span style="display: none;">test text</span></h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates facilis ut aperiam vitae provident mollitia?</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quia ipsa expedita.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur adip quia ipsa expedita.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- 
+keypoints:
+DOM methods - 
+1. to select an id - getElementById()
+2. document.getElementById("title").className - will print class name
+3. document.getElementById("title").getAttribute('id') - will print the value in the id attribute
+4. document.getElementById("title").getAttribute('class') - same as above but with class.
+5. document.getElementById("title").setAttribute('class', 'test') - will manipulate class values
+6. const title = document.getElementById("title") - we stored this in a variable.
+7. title.style.backgroundColor = 'green' - since we stored it in a variable we can useit and style elements.
+8. title.textContent, title.innerText, title.innerHTML, all of these methods gives the same output (in this example they return "DOM learning on chai aur code."). The difference is when we add a span to h1 tag and add a phrase inside and then do title.textcontent and title.innertext we see that in innertext the phrase is invisible unlike textcontent
+
+queryselectors:
+1. document.querySelector('h1') - this would return the first h1 element.
+2. we can also select particular element using this method like
+    document.querySelector('#title') and document.querySelector('.heading') jusk like how we select elements in css.
+3.     
+
+ -->

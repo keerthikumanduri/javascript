@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom with chai aur code</title>
+    
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1].innerHTML);// [] is used to print that particular index text and .innerHTML prints its content.
+
+    for (let i = 0; i < parent.children.length; i++) {
+       console.log(parent.children[i].innerHTML);
+    }
+
+    parent.children[1].style.color = 'orange' // to access and change color.
+
+    console.log(parent.firstElementChild); // selects first child.
+    console.log(parent.lastElementChild); // selects last child.
+
+   const dayOne =  document.querySelector(".day")
+    console.log(dayOne); // this always prints the first value. To in the previous child method we have seen how to move among the children elements now we can jump to parent element.
+
+    console.log(dayOne.parentElement); //this prints the parent element.
+
+    console.log(dayone.nextElementSibling)
+
+    console.log("NODES: ", parent.childNodes);
+</script>
+</html>
