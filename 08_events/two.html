@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop" style="height: 25px; width: 55px;"> stop </button>
+</body>
+<script>
+    const myName = function(){
+        console.log("keerthivardhan"); }
+
+    const newName = function(){
+        document.querySelector('h1').innerHTML = 'Jai sree ram'
+    }
+    const changeMe = setTimeout(// setTimeout is a method where we have to define a function and a time period , this function is run after the particular time we have mentioned runs out.
+    newName, 5000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log('stopped');
+    })
+
+
+  
+</script>
+</html>
